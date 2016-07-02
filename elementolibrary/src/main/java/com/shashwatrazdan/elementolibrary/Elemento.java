@@ -51,7 +51,7 @@ public class Elemento extends CoordinatorLayout {
         cTLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         cTLayout.setTitle(toolbarTitle);
 
-        cTLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
+        cTLayout.setExpandedTitleColor(getResources().getColor(00000000));
         int w = 10, h = 10;
 
         Bitmap.Config conf = Bitmap.Config.ARGB_8888; // see other conf types
