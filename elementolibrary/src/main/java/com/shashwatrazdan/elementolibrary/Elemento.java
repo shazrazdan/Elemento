@@ -92,6 +92,9 @@ public class Elemento extends CoordinatorLayout {
     public void setToolbarTitle(String s){
         cTLayout.setTitle(s);
     }
+    public void setExpandedToolbarColor(){
+        cTLayout.setExpandedTitleColor(0);
+    }
 
 
 
