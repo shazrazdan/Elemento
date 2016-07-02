@@ -2,6 +2,7 @@ package com.shashwatrazdan.elementolibrary;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.widget.NestedScrollView;
@@ -92,8 +93,8 @@ public class Elemento extends CoordinatorLayout {
     public void setToolbarTitle(String s){
         cTLayout.setTitle(s);
     }
-    public void setExpandedToolbarColor(){
-        cTLayout.setExpandedTitleColor(0);
+    public void setExpandedToolbarColor(int a, int r, int g, int b){
+        cTLayout.setExpandedTitleColor(Color.argb(a,r,g,b));
     }
 
 
