@@ -1,4 +1,4 @@
-package com.shashwat.elemento;
+package com.shashwatrazdan.elementolibrary;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
