@@ -50,8 +50,8 @@ public class Elemento extends CoordinatorLayout {
                 R.layout.elemento, this);
         cTLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         cTLayout.setTitle(toolbarTitle);
-
-        cTLayout.setExpandedTitleColor(0x00000000);
+        int transparent = 0x00000000;
+        cTLayout.setExpandedTitleColor(transparent);
         int w = 10, h = 10;
 
         Bitmap.Config conf = Bitmap.Config.ARGB_8888; // see other conf types
