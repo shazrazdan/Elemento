@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ public class Elemento extends CoordinatorLayout {
     int colorToolbar=0xFF42A5F5;
     int colorStatusBar = 0xFF1E88E5;
     Context context;
+    FloatingActionButton fab;
     String toolbarTitle = "DefaultText";
 
     public Elemento(Context context) {
@@ -49,10 +51,12 @@ public class Elemento extends CoordinatorLayout {
 
         LayoutInflater.from(getContext()).inflate(
                 R.layout.elemento, this);
+
         cTLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         cTLayout.setTitle(toolbarTitle);
         int transparent = 0x00000000;
         cTLayout.setExpandedTitleColor(transparent);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
         int w = 10, h = 10;
 
         Bitmap.Config conf = Bitmap.Config.ARGB_8888; // see other conf types
@@ -95,6 +99,13 @@ public class Elemento extends CoordinatorLayout {
     }
     public void setExpandedToolbarColor(int a, int r, int g, int b){
         cTLayout.setExpandedTitleColor(Color.argb(a,r,g,b));
+    }
+    public void setFABVisibility(Boolean v){
+        if (v) {
+            fab.setVisibility(VISIBLE);
+        } else {
+            fab.setVisibility(GONE);
+        }
     }
 
 
