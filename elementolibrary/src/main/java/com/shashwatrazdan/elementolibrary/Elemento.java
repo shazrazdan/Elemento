@@ -97,7 +97,7 @@ public class Elemento extends CoordinatorLayout {
         NestedScrollView nsv = (NestedScrollView) findViewById(R.id.child);
         nsv.setVisibility(View.GONE);
         CoordinatorLayout coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
-        coordinatorLayout.addView(v, 0);
+        coordinatorLayout.addView(v);
     }
 
 
