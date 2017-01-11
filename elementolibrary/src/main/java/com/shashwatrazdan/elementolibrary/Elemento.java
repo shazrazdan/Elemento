@@ -24,7 +24,7 @@ public class Elemento extends CoordinatorLayout {
     int colorToolbar=0xFF42A5F5;
     int colorStatusBar = 0xFF1E88E5;
     Context context;
-    FloatingActionButton fab;
+    //FloatingActionButton fab;
     String toolbarTitle = "DefaultText";
 
     public Elemento(Context context) {
@@ -56,7 +56,7 @@ public class Elemento extends CoordinatorLayout {
         cTLayout.setTitle(toolbarTitle);
         int transparent = 0x00000000;
         cTLayout.setExpandedTitleColor(transparent);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
+        //fab = (FloatingActionButton) findViewById(R.id.fab);
         int w = 10, h = 10;
 
         Bitmap.Config conf = Bitmap.Config.ARGB_8888; // see other conf types
@@ -109,9 +109,9 @@ public class Elemento extends CoordinatorLayout {
     }
     public void setFABVisibility(Boolean v){
         if (v) {
-            fab.setVisibility(VISIBLE);
+            //fab.setVisibility(VISIBLE);
         } else {
-            fab.setVisibility(GONE);
+            //fab.setVisibility(GONE);
         }
     }
 
