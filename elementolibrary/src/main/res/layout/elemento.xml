@@ -61,7 +61,7 @@
         style="@style/fab"
         app:theme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_anchorGravity="bottom|right|end"
-        />
+        android:visibility="gone"/>
 
 
 
