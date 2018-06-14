@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/shazrazdan/Elemento.svg?branch=master)](https://travis-ci.org/shazrazdan/Elemento)
 # Elemento
 Include the library in your project and you can achieve the same layout in your app with 3 easy lines of code:
 <br>
